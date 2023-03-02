@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container11">
+    <div class="main-container">
+      <div class="intro" id="intro">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#data" id="scrooData">Data</a></li>
+          </ul>
+        </nav>
+        <div class="login-box">
+          <form>
+            <div class="user-box">
+              <input id="name" type="text" />
+              <label>Name</label>
+            </div>
+            <div class="user-box">
+              <input id="login" type="text" />
+              <label>Login</label>
+            </div>
+            <div class="user-box">
+              <input id="pass" type="password" />
+              <label>Password</label>
+            </div>
+            <center>
+              <button
+                id="btn-send"
+  
+                data-text="Awesome"
+                class="button"
+              >
+                <span class="actual-text">&nbsp;send&nbsp;</span>
+                <span class="hover-text" aria-hidden="true"
+                  >&nbsp;send&nbsp;</span
+                >
+              </button>
+            </center>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- DATA STORAGE -->
+    <div class="container-data">
+      <div class="main-title" id="data">
+      <h1>Your added data</h1>
+        <input id="search" type="text" placeholder="Search" />
+      </div>
+      <div class="data-storage"></div>
+      <!-- Paginatiom -->
+      <nav">
+        <ul class="pagination">
+          <li class="page-item prev">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <div class="pagination-list"></div>
+          <li class="next"><a class="page-link page-item" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- FULL INFORMATION ABOUT CARD -->
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="edit-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit</h2>
+        <form>
+          <label for="input1">Name:</label>
+          <input type="text" id="input1" name="input1" />
+          <label for="input1">Login</label>
+          <input type="text" id="input2" name="input1" />
+          <label for="input2">Password:</label>
+          <input type="text" id="input3" name="input2" />
+          <button type="submit" id="modalSave">Save</button>
+        </form>
+      </div>
+    </div>    
+    <a href="#" id="home" class="upbtn" >↑</a>
+  
+    <div class="bigContent">
+
+      </div>
+    </div>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/vanta.net.min.js"></script>
+    <script src="./main-js.js"></script>
+  </body>
+</html>
